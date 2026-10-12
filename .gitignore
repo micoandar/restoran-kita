@@ -1,0 +1,56 @@
+# ============================================
+# GITIGNORE — Restoran Kita
+# ============================================
+
+# === Config dengan kredensial ===
+config/database.php
+.env
+.env.local
+*.env
+
+# === Uploads — gambar user (tidak perlu di repo) ===
+# === Uploads — gambar user (tidak perlu di repo) ===
+uploads/*
+!uploads/.gitkeep
+# === Logs ===
+logs/
+*.log
+
+# === Backup / SQL dumps ===
+*.sql
+*.sql.gz
+*.zip
+*.rar
+
+# Exception: file SQL yang boleh di-upload
+!database.sql
+
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === IDE / Editor ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*~
+
+# File sementara (kalau nanti dibuat)
+hash.php
+verify.php
+
+# === Node (kalau nanti pakai) ===
+node_modules/
+package-lock.json
+
+# === Composer (kalau nanti pakai) ===
+vendor/
+composer.lock
+
+# === Temporary ===
+*.tmp
+*.bak
+.cache/
